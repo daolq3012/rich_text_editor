@@ -47,7 +47,7 @@ linter:
     # http://dart-lang.github.io/linter/lints/always_put_required_named_parameters_first.html
     # recommendation: recommended
     # 0 issues
-    - always_put_required_named_parameters_first
+#    - always_put_required_named_parameters_first
 
     # Use @required.
     # http://dart-lang.github.io/linter/lints/always_require_non_null_named_parameters.html
@@ -678,7 +678,7 @@ linter:
     # http://dart-lang.github.io/linter/lints/sort_pub_dependencies.html
     # recommendation: optional
     # 0 issues
-    - sort_pub_dependencies
+#    - sort_pub_dependencies
 
     # Sort unnamed constructor declarations first.
     # http://dart-lang.github.io/linter/lints/sort_unnamed_constructors_first.html
