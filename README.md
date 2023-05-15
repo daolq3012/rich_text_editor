@@ -58,20 +58,24 @@ Attribute change of editor
 - [ ] Text Font Size
 - [ ] Font Family
 
-Demo
-- TBD
+**Demo**
+
+<img src="./example/demo/sample_rich_editext.gif" width=40% height=40%>
+
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
+    
+```yaml
+  rich_text_html_editor: ^1.0.1
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+See examples in `/example` folder.
 
 ```dart
-const like = 'sample';
+import 'package:rich_text_html_editor/rich_editor.dart';
 ```
 
 ## Additional information

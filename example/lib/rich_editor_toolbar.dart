@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:rich_text_editor/rich_editor.dart';
+import 'package:rich_text_html_editor/rich_editor.dart';
 
 import 'assets_image.dart';
 
