@@ -84,6 +84,7 @@ class RichEditor extends StatefulWidget {
   final String? placeholder;
   final String? initialValue;
   final Color loadingColor;
+  final String fontColorHex;
   final bool isShowLoadingIndicator;
   final double loadingIndicatorSize;
   final bool useHybridComposition;
@@ -98,6 +99,7 @@ class RichEditor extends StatefulWidget {
     this.placeholder,
     this.initialValue,
     this.loadingColor = Colors.white,
+    this.fontColorHex = '#22313F',
     this.isShowLoadingIndicator = true,
     this.loadingIndicatorSize = 30,
     this.useHybridComposition = true,
@@ -127,8 +129,8 @@ class RichEditorState extends State<RichEditor> {
       if (!isReady) {
         return;
       }
-      widget.isReadOnly ? enableInput() : disableInput();
-      setFontColor('#22313F');
+      widget.isReadOnly ? disableInput() : enableInput();
+      setFontColor(widget.fontColorHex);
       setPlaceholder(widget.placeholder ?? '');
       final initialContent = (widget.initialValue ?? '')
           .replaceAll('<p>', '<div>')
@@ -354,6 +356,74 @@ class RichEditorState extends State<RichEditor> {
 
   void focusEditor() {
     _controller?.evaluateJavascript(source: 'javascript:RE.focus();');
+  }
+
+  void insertImage(String url, String alt) {
+    _controller?.evaluateJavascript(source: 'javascript:RE.prepareInsert();');
+    _controller?.evaluateJavascript(
+        source: "javascript:RE.insertImage('$url', '$alt');");
+  }
+
+  void insertImageW(String url, String alt, int width) {
+    _controller?.evaluateJavascript(source: 'javascript:RE.prepareInsert();');
+    _controller?.evaluateJavascript(
+        source: "javascript:RE.insertImageW('$url', '$alt','$width');");
+  }
+
+  void insertImageWH(String url, String alt, int width, int height) {
+    _controller?.evaluateJavascript(source: 'javascript:RE.prepareInsert();');
+    _controller?.evaluateJavascript(
+        source:
+            "javascript:RE.insertImageWH('$url', '$alt','$width', '$height');");
+  }
+
+  void insertVideo(String url) {
+    _controller?.evaluateJavascript(source: 'javascript:RE.prepareInsert();');
+    _controller?.evaluateJavascript(
+        source: "javascript:RE.insertVideo('$url');");
+  }
+
+  void insertVideoW(String url, int width) {
+    _controller?.evaluateJavascript(source: 'javascript:RE.prepareInsert();');
+    _controller?.evaluateJavascript(
+        source: "javascript:RE.insertVideoW('$url', '$width');");
+  }
+
+  void insertVideoWH(String url, int width, int height) {
+    _controller?.evaluateJavascript(source: 'javascript:RE.prepareInsert();');
+    _controller?.evaluateJavascript(
+        source: "javascript:RE.insertVideoWH('$url', '$width', '$height');");
+  }
+
+  void insertAudio(String url) {
+    _controller?.evaluateJavascript(source: 'javascript:RE.prepareInsert();');
+    _controller?.evaluateJavascript(
+        source: "javascript:RE.insertAudio('$url');");
+  }
+
+  void insertYoutubeVideo(String url) {
+    _controller?.evaluateJavascript(source: 'javascript:RE.prepareInsert();');
+    _controller?.evaluateJavascript(
+        source: "javascript:RE.insertYoutubeVideo('$url');");
+  }
+
+  void insertYoutubeVideoW(String url, int width) {
+    _controller?.evaluateJavascript(source: 'javascript:RE.prepareInsert();');
+    _controller?.evaluateJavascript(
+        source: "javascript:RE.insertYoutubeVideoW('$url', '$width');");
+  }
+
+  void insertYoutubeVideoWH(String url, int width, int height) {
+    _controller?.evaluateJavascript(source: 'javascript:RE.prepareInsert();');
+    _controller?.evaluateJavascript(
+        source:
+            "javascript:RE.insertYoutubeVideoWH('$url', '$width', '$height');");
+  }
+
+  void insertLink(String href, String title) {
+    _controller?.evaluateJavascript(source: 'javascript:RE.prepareInsert();');
+    _controller?.evaluateJavascript(
+        source: "javascript:RE.insertLink('$href', '$title');");
   }
 
   void focusCursor() {

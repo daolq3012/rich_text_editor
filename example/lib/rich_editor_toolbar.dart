@@ -66,14 +66,6 @@ class RichEditorToolbarState extends State<RichEditorToolbar> {
                 _unOrderedListNotifier, EditorStyleType.UNORDERED_LIST),
             _wrapToggleButton(
                 _orderedListNotifier, EditorStyleType.ORDERED_LIST),
-            Expanded(
-                child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: const [
-                Text('undo'),
-                Text('redo'),
-              ],
-            ))
           ],
         ),
       );

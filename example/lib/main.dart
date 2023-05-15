@@ -41,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     _richEditorKey = GlobalKey<RichEditorState>();
+    _richToolbarEditorKey = GlobalKey<RichEditorToolbarState>();
   }
 
   // build method
@@ -75,15 +76,23 @@ class _MyHomePageState extends State<MyHomePage> {
                   }
                 },
               ),
-              SizedBox(
-                height: 100,
-                child: RichEditor(
-                  key: _richEditorKey,
-                  placeholder: 'Sample placeholder',
-                  onStyleTextFocused: (editorStyles) {
-                    _richToolbarEditorKey.currentState
-                        ?.updateStyle(editorStyles);
-                  },
+              Container(
+                padding: EdgeInsets.all(10),
+                margin: EdgeInsets.all(10),
+                decoration: const BoxDecoration(
+                  color: Color.fromRGBO(246, 246, 246, 1),
+                  borderRadius: BorderRadius.all(Radius.circular(4)),
+                ),
+                child: SizedBox(
+                  height: 100,
+                  child: RichEditor(
+                    key: _richEditorKey,
+                    placeholder: 'Sample placeholder',
+                    onStyleTextFocused: (editorStyles) {
+                      _richToolbarEditorKey.currentState
+                          ?.updateStyle(editorStyles);
+                    },
+                  ),
                 ),
               ),
             ],
