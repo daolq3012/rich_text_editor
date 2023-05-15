@@ -9,8 +9,8 @@ analyzer:
     # When compiling to JS, both implicit options apply to the current
     # project and all dependencies. They are useful to find possible
     # Type fixes or areas for explicit typing.
-    implicit-casts: true
-    implicit-dynamic: true
+#    implicit-casts: true
+#    implicit-dynamic: true
   exclude:
     - "core/**.dart"
     - "lib/**.g.dart"
@@ -150,7 +150,7 @@ linter:
     # http://dart-lang.github.io/linter/lints/avoid_positional_boolean_parameters.html
     # recommendation: recommended
     # 0 issues
-    - avoid_positional_boolean_parameters
+#    - avoid_positional_boolean_parameters
 
     # Avoid private typedef functions.
     # http://dart-lang.github.io/linter/lints/avoid_private_typedef_functions.html
@@ -495,7 +495,7 @@ linter:
     # http://dart-lang.github.io/linter/lints/prefer_const_constructors.html
     # recommendation: optional
     # 0 issues
-    - prefer_const_constructors
+#    - prefer_const_constructors
 
     # Prefer declare const constructors on `@immutable` classes.
     # http://dart-lang.github.io/linter/lints/prefer_const_constructors_in_immutables.html
