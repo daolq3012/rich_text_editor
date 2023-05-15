@@ -11,13 +11,55 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+`RichEditor for Flutter` is a beautiful Rich Text `WYSIWYG Editor` for `Flutter` support Android and iOS. .
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Supported Functions
+---
 
+- [x] Bold
+- [x] Italic
+- [x] Subscript
+- [x] Superscript
+- [x] Strikethrough
+- [x] Underline
+- [x] Justify Left
+- [x] Justify Center
+- [x] Justify Right
+- [x] Blockquote
+- [x] Heading 1
+- [x] Heading 2
+- [x] Heading 3
+- [x] Heading 4
+- [x] Heading 5
+- [x] Heading 6
+- [x] Undo
+- [x] Redo
+- [x] Indent
+- [x] Outdent
+- [x] Insert Image
+- [x] Insert Youtube
+- [x] Insert Video
+- [x] Insert Audio
+- [x] Insert Link
+- [x] Unordered List (Bullets)
+- [x] Ordered List (Numbers)
+
+Attribute change of editor
+---
+- [x] Text Color
+- [x] Placeholder
+- [x] State Callback
+
+**Milestone**
+- [ ] Checkbox
+- [ ] Text Background Color
+- [ ] Text Font Size
+- [ ] Font Family
+
+Demo
+- TBD
 ## Getting started
 
 TODO: List prerequisites and provide or point to information on how to
