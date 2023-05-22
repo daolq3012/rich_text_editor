@@ -67,7 +67,7 @@ Attribute change of editor
 This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
     
 ```yaml
-  rich_text_html_editor: ^1.0.1
+  rich_text_html_editor: ^1.0.2
 ```
 
 ## Usage

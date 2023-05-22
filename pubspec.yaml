@@ -1,6 +1,6 @@
 name: rich_text_html_editor
 description: RichEditor for Flutter` is a beautiful Rich Text `WYSIWYG Editor` for Android and iOS.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/daolq3012/rich_text_editor
 
 environment:

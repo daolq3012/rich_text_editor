@@ -111,7 +111,7 @@ class RichEditor extends StatefulWidget {
 
 class RichEditorState extends State<RichEditor> {
   static const String _kInitialFilePath =
-      'packages/rich_text_editor/assets/editor/editor.html';
+      'packages/rich_text_html_editor/assets/editor/editor.html';
   static const String _kCallbackSchema = 're-callback://';
   static const String _kStateSchema = 're-state://';
   late final ValueNotifier<bool> _loadingNotifier;
