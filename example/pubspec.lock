@@ -166,9 +166,10 @@ packages:
   rich_text_html_editor:
     dependency: "direct dev"
     description:
-      path: ".."
-      relative: true
-    source: path
+      name: rich_text_html_editor
+      sha256: b7dec02312b6357de6c0b40f59c2abf8e88f994f4a482f801dbad8d4f28bee01
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.2"
   sky_engine:
     dependency: transitive

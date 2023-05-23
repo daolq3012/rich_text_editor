@@ -21,8 +21,7 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_svg: ^2.0.5
 
-  rich_text_html_editor:
-    path: ../
+  rich_text_html_editor: ^1.0.2
 
 flutter:
   uses-material-design: true
